@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Container Styles */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: #f4f4f4;
+    color: #333;
+}
+
+button {
+    padding: 0 20px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background: #ffd700; /* Gold background */
+    color: #333; /* Dark text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background: #ada9a9;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Task Text */
+.task-text {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+/* Buttons inside Tasks */
+li button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+li button:hover {
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ddd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.background-img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it behind other content */
+    z-index: -1; /* Send it to the background */
+    top: 0;
+    left: 0;
+}
